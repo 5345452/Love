@@ -993,6 +993,7 @@ font-weight:500;
 
 }
 
+
 /*==================================
 ENVELOPE
 ==================================*/
@@ -1338,6 +1339,7 @@ font-size:34px;
 }
 
 }
+
 /*==================================
 FINAL CHAPTER
 ==================================*/
@@ -1856,6 +1858,68 @@ font-size:24px;
 right:18px;
 
 bottom:18px;
+
+}
+
+}
+/* MOBILE FIX FOR CHAPTER 6 */
+
+.scrapbook-section{
+
+position:relative;
+z-index:100;
+
+}
+
+.scrapbook{
+
+position:relative;
+z-index:101;
+
+}
+
+.photo-card{
+
+position:relative;
+z-index:102;
+
+opacity:1 !important;
+visibility:visible !important;
+
+}
+
+.photo-card img{
+
+display:block !important;
+opacity:1 !important;
+visibility:visible !important;
+
+}
+@media (max-width:768px){
+
+.scrapbook{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.photo-card{
+
+transform:none !important;
+
+}
+
+.photo-card img{
+
+height:auto;
+
+aspect-ratio:3/4;
+
+object-fit:cover;
 
 }
 
